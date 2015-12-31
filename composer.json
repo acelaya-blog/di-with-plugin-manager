@@ -1,0 +1,20 @@
+{
+    "name": "alejandro/di-with-plugin-manager",
+    "description": "Example application demonstrating how to use ZF2 plugin managers to improve dependency injection",
+    "require": {
+        "zendframework/zend-servicemanager": "^2.6",
+        "php": "~5.5|~7.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alejandro Celaya",
+            "email": "alejandro@alejandrocelaya.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Acelaya\\Social\\": "src"
+        }
+    }
+}
