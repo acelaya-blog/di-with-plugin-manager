@@ -5,7 +5,7 @@ use Acelaya\Social\Connector\SocialConnectorInterface;
 use Zend\ServiceManager\AbstractPluginManager;
 use Zend\ServiceManager\Exception;
 
-class SocialPluginManager extends AbstractPluginManager
+class SocialPluginManager extends AbstractPluginManager implements SocialPluginManagerInterface
 {
     /**
      * Validate the plugin

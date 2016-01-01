@@ -3,16 +3,15 @@ namespace Acelaya\Social;
 
 use Acelaya\Social\Connector\SocialConnectorInterface;
 use Acelaya\Social\Exception\InvalidSocialNetworkException;
-use Zend\ServiceManager\ServiceLocatorInterface;
 
 class SocialUsers
 {
     /**
-     * @var ServiceLocatorInterface
+     * @var SocialPluginManagerInterface
      */
     protected $socialPlugins;
 
-    public function __construct(ServiceLocatorInterface $socialPlugins)
+    public function __construct(SocialPluginManagerInterface $socialPlugins)
     {
         $this->socialPlugins = $socialPlugins;
     }
